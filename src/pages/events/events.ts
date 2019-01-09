@@ -4,6 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import config from "../../config";
 import 'rxjs/add/operator/finally';
 import 'rxjs/add/operator/map';
+import {EventPage} from "../event/event";
 
 /**
  * Generated class for the EventsPage page.
@@ -60,6 +61,12 @@ export class EventsPage {
           ]
         }).present();
       })
+  }
+
+  showMeetup(meetup) {
+    this.navCtrl.push(EventPage, {
+      event: meetup
+    });
   }
 
 }

@@ -22,7 +22,7 @@
 
     <img *ngIf="event.featured_photo" [src]="event.featured_photo.photo_link" />
 
-    <button ion-button block>Más info</button>
+    <button (click)="navigate.emit()" ion-button block>Más info</button>
 
   </ion-card-content>
 </ion-card>

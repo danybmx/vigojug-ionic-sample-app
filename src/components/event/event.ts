@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 /**
  * Generated class for the EventComponent component.
@@ -13,6 +13,7 @@ import {Component, Input} from '@angular/core';
 export class EventComponent {
 
   @Input() public event: any;
+  @Output() navigate = new EventEmitter();
 
   constructor() {
   }

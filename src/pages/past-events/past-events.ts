@@ -4,6 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import config from "../../config";
 import 'rxjs/add/operator/finally';
 import 'rxjs/add/operator/map';
+import {EventPage} from "../event/event";
 
 /**
  * Generated class for the PastEventsPage page.
@@ -63,4 +64,9 @@ export class PastEventsPage {
       })
   }
 
+  showMeetup(meetup) {
+    this.navCtrl.push(EventPage, {
+      event: meetup
+    });
+  }
 }

@@ -14,6 +14,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { ComponentsModule } from "../components/components.module";
 import { registerLocaleData } from "@angular/common";
 import localeEs from '@angular/common/locales/es';
+import {EventPage} from "../pages/event/event";
 
 registerLocaleData(localeEs, 'es');
 
@@ -21,6 +22,7 @@ registerLocaleData(localeEs, 'es');
   declarations: [
     MyApp,
     AboutPage,
+    EventPage,
     EventsPage,
     PastEventsPage,
     TabsPage
@@ -36,6 +38,7 @@ registerLocaleData(localeEs, 'es');
     MyApp,
     AboutPage,
     EventsPage,
+    EventPage,
     PastEventsPage,
     TabsPage
   ],

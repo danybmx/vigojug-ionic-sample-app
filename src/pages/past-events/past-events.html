@@ -14,5 +14,5 @@
 
 
 <ion-content>
-  <event [event]="event" *ngFor="let event of events"></event>
+  <event [event]="event" (navigate)="showMeetup(event)" *ngFor="let event of events"></event>
 </ion-content>
