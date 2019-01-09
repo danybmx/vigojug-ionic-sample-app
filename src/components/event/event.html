@@ -1,0 +1,28 @@
+<!-- Generated template for the EventComponent component -->
+<ion-card>
+  <ion-card-header>
+
+    <ion-card-title>
+      {{event.name}}
+    </ion-card-title>
+
+    <ion-badge color="dark" *ngIf="event.time">
+      <ion-icon name="time"></ion-icon>
+      {{event.time | date:'medium'}}
+    </ion-badge>
+
+    <ion-badge color="dark" *ngIf="event.venue">
+      <ion-icon name="flag"></ion-icon>
+      {{event.venue.name}}
+    </ion-badge>
+
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <img *ngIf="event.featured_photo" [src]="event.featured_photo.photo_link" />
+
+    <button ion-button block>Más info</button>
+
+  </ion-card-content>
+</ion-card>
